@@ -1,5 +1,5 @@
 import ssl, socket , ftplib
-class ftps(ftplib.FTP_TLS):
+class ftps_implicit(ftplib.FTP_TLS):
     """FTP_TLS subclass that automatically wraps sockets in SSL to support implicit FTPS."""
 
     def __init__(self, *args, **kwargs):
