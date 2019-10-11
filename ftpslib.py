@@ -18,7 +18,7 @@ class ftps_implicit(ftplib.FTP_TLS):
             value = self.context.wrap_socket(value)
         self._sock = value
 
-# ftp_client = tyFTP()
+# ftp_client = ftps_implicit()
 # ftp_client.connect(host='ftp.example.com ', port=990)
 # ftp_client.login(user='username', passwd='password')
 # ftp_client.prot_p()
